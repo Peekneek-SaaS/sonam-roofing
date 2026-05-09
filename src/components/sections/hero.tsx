@@ -70,8 +70,8 @@ export function HeroSection() {
                   width={800}
                 />
               </div>
-              <div className="absolute -bottom-6 -left-6 rounded-xl bg-background p-6 shadow-lg">
-                <div className="hidden md:flex items-center gap-4">
+              <div className="hidden lg:block absolute -bottom-6 -left-6 rounded-xl bg-background p-6 shadow-lg">
+                <div className="flex items-center gap-4">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary">
                     <Award className="h-6 w-6 text-secondary" />
                   </div>
