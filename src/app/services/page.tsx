@@ -22,7 +22,7 @@ import {
 import { CTASection } from "@/components/sections/cta";
 
 export const metadata: Metadata = {
-  title: "Our Roofing Services | High Skillz Roofing",
+  title: "Our Roofing Services | Sonam Roofing",
   description:
     "Complete roofing services including roof replacement, repairs, flat roofing, skylights, gutters, and emergency services. Serving Toronto & GTA.",
 };
@@ -156,7 +156,7 @@ export default function ServicesPage() {
             <div className="mx-auto mb-12 max-w-3xl text-center">
               <FadeIn>
                 <h2 className="mb-4 text-3xl font-bold tracking-tight md:text-4xl">
-                  Why Choose High Skillz Roofing?
+                  Why Choose Sonam Roofing?
                 </h2>
               </FadeIn>
               <FadeIn delay={0.1}>

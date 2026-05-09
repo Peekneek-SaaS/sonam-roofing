@@ -10,7 +10,7 @@ import {
 } from "@/components/motion-wrapper";
 
 export const metadata: Metadata = {
-  title: "Get a Free Quote | High Skillz Roofing",
+  title: "Get a Free Quote | Sonam Roofing",
   description:
     "Request your free roofing estimate today. No obligation, just honest advice from trusted roofing experts serving Toronto & GTA.",
 };

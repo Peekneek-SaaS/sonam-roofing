@@ -14,9 +14,9 @@ import {
 import { CTASection } from "@/components/sections/cta";
 
 export const metadata: Metadata = {
-  title: "Service Areas | High Skillz Roofing",
+  title: "Service Areas | Sonam Roofing",
   description:
-    "High Skillz Roofing serves Toronto, Vaughan, North York, Richmond Hill, Markham, Mississauga and the entire Greater Toronto Area.",
+    "Sonam Roofing serves Toronto, Vaughan, North York, Richmond Hill, Markham, Mississauga and the entire Greater Toronto Area.",
 };
 
 const areaImages: Record<string, string> = {

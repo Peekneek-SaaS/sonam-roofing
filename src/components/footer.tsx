@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Phone, Mail, MapPin, Airplay } from "lucide-react";
 import { services, serviceAreas } from "@/lib/data";
+import { HugeiconsIcon } from "@hugeicons/react";
+import { Facebook02Icon, InstagramIcon, Linkedin01Icon } from "@hugeicons/core-free-icons";
 
 export function Footer() {
   return (
@@ -10,12 +12,10 @@ export function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="flex h-9 w-9 items-center justify-center rounded-md bg-accent">
-                <span className="text-lg font-bold text-accent-foreground">
-                  HS
-                </span>
+              <div className="flex h-9 w-9 items-center justify-center rounded-md bg-primary">
+                <span className="text-lg font-bold text-secondary">SR</span>
               </div>
-              <span className="text-lg font-bold">High Skillz Roofing</span>
+              <span className="text-lg font-bold">Sonam Roofing</span>
             </div>
             <p className="text-sm text-primary-foreground/80">
               Your trusted roofing contractor in Toronto and the GTA. Licensed,
@@ -27,21 +27,21 @@ export function Footer() {
                 className="text-primary-foreground/60 hover:text-primary-foreground"
                 aria-label="Facebook"
               >
-                <Airplay className="h-5 w-5" />
+                <HugeiconsIcon icon={Facebook02Icon} />
               </a>
               <a
                 href="#"
                 className="text-primary-foreground/60 hover:text-primary-foreground"
                 aria-label="Instagram"
               >
-                <Airplay className="h-5 w-5" />
+                <HugeiconsIcon icon={InstagramIcon} />
               </a>
               <a
                 href="#"
                 className="text-primary-foreground/60 hover:text-primary-foreground"
                 aria-label="LinkedIn"
               >
-                <Airplay className="h-5 w-5" />
+                <HugeiconsIcon icon={Linkedin01Icon} />
               </a>
             </div>
           </div>
@@ -125,7 +125,7 @@ export function Footer() {
       <div className="border-t border-primary-foreground/10">
         <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-4 py-6 text-sm text-primary-foreground/60 md:flex-row lg:px-8">
           <p>
-            &copy; {new Date().getFullYear()} High Skillz Roofing. All rights
+            &copy; {new Date().getFullYear()} Sonam Roofing. All rights
             reserved.
           </p>
           <div className="flex gap-6">

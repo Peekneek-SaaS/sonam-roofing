@@ -165,7 +165,7 @@ export const serviceAreas = [
     description:
       "Expert roofing services for Vaughan homeowners and businesses.",
     longDescription:
-      "Vaughan residents trust High Skillz Roofing for reliable, high-quality roofing services. Whether you're in Woodbridge, Maple, or Kleinburg, our experienced team is ready to handle all your roofing needs with professionalism and care.",
+      "Vaughan residents trust Sonam Roofing for reliable, high-quality roofing services. Whether you're in Woodbridge, Maple, or Kleinburg, our experienced team is ready to handle all your roofing needs with professionalism and care.",
     neighborhoods: ["Woodbridge", "Maple", "Kleinburg", "Concord", "Thornhill"],
   },
   {
@@ -173,7 +173,7 @@ export const serviceAreas = [
     name: "North York",
     description: "Reliable roofing solutions for North York communities.",
     longDescription:
-      "From Willowdale to Don Mills, North York homeowners count on High Skillz Roofing for dependable roofing services. Our team understands the diverse roofing needs of this vibrant community and delivers solutions that last.",
+      "From Willowdale to Don Mills, North York homeowners count on Sonam Roofing for dependable roofing services. Our team understands the diverse roofing needs of this vibrant community and delivers solutions that last.",
     neighborhoods: [
       "Willowdale",
       "Don Mills",
@@ -195,7 +195,7 @@ export const serviceAreas = [
     name: "Markham",
     description: "Professional roofing contractor serving Markham.",
     longDescription:
-      "Markham's diverse communities trust High Skillz Roofing for professional roofing services. From Unionville's heritage homes to modern developments in Markham Centre, we have the expertise to handle any roofing project.",
+      "Markham's diverse communities trust Sonam Roofing for professional roofing services. From Unionville's heritage homes to modern developments in Markham Centre, we have the expertise to handle any roofing project.",
     neighborhoods: ["Unionville", "Markham Centre", "Cornell", "Milliken"],
   },
   {
@@ -226,7 +226,7 @@ export const testimonials = [
     name: "Michael Thompson",
     location: "North York",
     rating: 5,
-    text: "High Skillz Roofing did an amazing job on our roof replacement. Professional, on time, and the quality is outstanding. Highly recommend!",
+    text: "Sonam Roofing did an amazing job on our roof replacement. Professional, on time, and the quality is outstanding. Highly recommend!",
   },
   {
     name: "Sarah Mitchell",

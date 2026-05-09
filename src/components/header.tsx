@@ -21,11 +21,11 @@ export function Header() {
         <Link href="/" className="flex items-center gap-2">
           <div className="flex h-9 w-9 items-center justify-center rounded-md bg-primary">
             <span className="text-lg font-bold text-primary-foreground">
-              HS
+              SR
             </span>
           </div>
           <span className="text-lg font-bold tracking-tight">
-            High Skillz Roofing
+            Sonam Roofing
           </span>
         </Link>
 
@@ -134,17 +134,16 @@ export function Header() {
               About
             </Link>
             <div className="mt-4 flex flex-col gap-3">
-              <a
-                href="tel:+14165551234"
-                className="flex items-center gap-2 text-sm font-medium"
-              >
-                <Phone className="h-4 w-4" />
-                (416) 555-1234
-              </a>
-              <Button
-                asChild
-                className="w-full bg-accent text-accent-foreground hover:bg-accent/90"
-              >
+              <Button variant="ghost" asChild>
+                <a
+                  href="tel:+14165551234"
+                  className="flex items-center gap-2 text-sm font-medium hover:text-primary"
+                >
+                  <Phone className="h-4 w-4" />
+                  (416) 555-1234
+                </a>
+              </Button>
+              <Button asChild>
                 <Link href="/quote" onClick={() => setMobileMenuOpen(false)}>
                   Get Free Quote
                 </Link>

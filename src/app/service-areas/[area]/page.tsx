@@ -31,12 +31,12 @@ export async function generateMetadata({
 
   if (!areaData) {
     return {
-      title: "Area Not Found | High Skillz Roofing",
+      title: "Area Not Found | Sonam Roofing",
     };
   }
 
   return {
-    title: `Roofing Services in ${areaData.name} | High Skillz Roofing`,
+    title: `Roofing Services in ${areaData.name} | Sonam Roofing`,
     description: `Professional roofing contractor serving ${areaData.name}. Roof repair, replacement, flat roofing, and emergency services. Licensed & Insured. Free quotes!`,
   };
 }
@@ -104,9 +104,9 @@ export default async function AreaPage({ params }: PageProps) {
                   </Button>
                   <Button
                     size="lg"
-                    variant="outline"
-                    className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10"
+                    variant="link"
                     asChild
+                    className="text-white"
                   >
                     <a href="tel:+14165551234">
                       <Phone className="mr-2 h-4 w-4" />
@@ -120,7 +120,7 @@ export default async function AreaPage({ params }: PageProps) {
         </section>
 
         {/* Neighborhoods */}
-        <section className="bg-secondary py-12">
+        <section className="bg-background py-12">
           <div className="container mx-auto px-4 lg:px-8">
             <FadeIn>
               <div className="flex flex-wrap items-center justify-center gap-4">
@@ -130,7 +130,7 @@ export default async function AreaPage({ params }: PageProps) {
                 {areaData.neighborhoods.map((neighborhood) => (
                   <span
                     key={neighborhood}
-                    className="rounded-full bg-background px-4 py-2 text-sm font-medium"
+                    className="rounded-full bg-background text-primary px-4 py-2 text-sm font-semiold"
                   >
                     {neighborhood}
                   </span>
@@ -141,7 +141,7 @@ export default async function AreaPage({ params }: PageProps) {
         </section>
 
         {/* Services Available */}
-        <section className="bg-background py-20 lg:py-28">
+        <section className="bg-secondary py-20 lg:py-28">
           <div className="container mx-auto px-4 lg:px-8">
             <div className="mb-12 text-center">
               <FadeIn>
@@ -164,7 +164,7 @@ export default async function AreaPage({ params }: PageProps) {
                     href={`/services#${service.id}`}
                     className="group block rounded-xl border bg-card p-6 transition-shadow hover:shadow-md"
                   >
-                    <h3 className="mb-2 text-lg font-semibold group-hover:text-accent">
+                    <h3 className="mb-2 text-lg font-semibold group-hover:text-primary">
                       {service.title}
                     </h3>
                     <p className="mb-4 text-sm text-muted-foreground">
@@ -176,7 +176,7 @@ export default async function AreaPage({ params }: PageProps) {
                           key={feature}
                           className="flex items-center gap-2 text-sm"
                         >
-                          <CheckCircle className="h-4 w-4 text-accent" />
+                          <CheckCircle className="h-4 w-4 text-primary" />
                           {feature}
                         </li>
                       ))}
@@ -218,7 +218,7 @@ export default async function AreaPage({ params }: PageProps) {
                       key={point}
                       className="flex items-start gap-3"
                     >
-                      <CheckCircle className="h-5 w-5 flex-shrink-0 text-accent" />
+                      <CheckCircle className="h-5 w-5 shrink-0 text-primary" />
                       <span>{point}</span>
                     </FadeInStaggerItem>
                   ))}
@@ -232,14 +232,14 @@ export default async function AreaPage({ params }: PageProps) {
                       {Array.from({ length: 5 }).map((_, i) => (
                         <Star
                           key={i}
-                          className="h-5 w-5 fill-accent text-accent"
+                          className="h-5 w-5 fill-primary stroke-primary text-primary"
                         />
                       ))}
                     </div>
                     <p className="mb-4 text-foreground">
-                      &quot;High Skillz Roofing did an amazing job on our roof
-                      in {areaData.name}. Professional, on time, and the quality
-                      is outstanding. Highly recommend!&quot;
+                      &quot;Sonam Roofing did an amazing job on our roof in{" "}
+                      {areaData.name}. Professional, on time, and the quality is
+                      outstanding. Highly recommend!&quot;
                     </p>
                     <div className="flex items-center gap-3">
                       <div className="flex h-10 w-10 items-center justify-center rounded-full bg-secondary">
@@ -256,10 +256,8 @@ export default async function AreaPage({ params }: PageProps) {
 
                   {/* Stats */}
                   <div className="grid grid-cols-2 gap-4">
-                    <div className="rounded-xl bg-accent p-6 text-center">
-                      <p className="text-3xl font-bold text-accent-foreground">
-                        500+
-                      </p>
+                    <div className="rounded-xl bg-secondary p-6 text-center">
+                      <p className="text-3xl font-bold text-foreground">500+</p>
                       <p className="text-sm text-accent-foreground/80">
                         Roofs in {areaData.name}
                       </p>
@@ -278,7 +276,7 @@ export default async function AreaPage({ params }: PageProps) {
         </section>
 
         {/* Other Service Areas */}
-        <section className="bg-background py-20 lg:py-28">
+        <section className="bg-secondary py-20 lg:py-28">
           <div className="container mx-auto px-4 lg:px-8">
             <FadeIn>
               <h2 className="mb-8 text-center text-3xl font-bold tracking-tight md:text-4xl">
@@ -294,7 +292,7 @@ export default async function AreaPage({ params }: PageProps) {
                       href={`/service-areas/${otherArea.slug}`}
                       className="flex items-center gap-2 rounded-full border bg-card px-6 py-3 font-medium transition-colors hover:bg-secondary"
                     >
-                      <MapPin className="h-4 w-4 text-accent" />
+                      <MapPin className="h-4 w-4 text-primary" />
                       {otherArea.name}
                     </Link>
                   </FadeInStaggerItem>

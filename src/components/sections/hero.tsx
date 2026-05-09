@@ -24,7 +24,7 @@ export function HeroSection() {
             </FadeIn>
             <FadeIn delay={0.2}>
               <p className="mb-8 text-lg text-muted-foreground">
-                High Skillz Roofing delivers residential and commercial roofing
+                Sonam Roofing delivers residential and commercial roofing
                 solutions built to last. We combine quality craftsmanship with
                 transparent pricing and industry-leading warranties.
               </p>

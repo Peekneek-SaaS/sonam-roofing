@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "High Skillz Roofing | Trusted Roofing Contractor in Toronto & GTA",
+  title: "Sonam Roofing | Trusted Roofing Contractor in Toronto & GTA",
   description:
     "Professional roofing services in Toronto, Vaughan, North York & GTA. Expert roof repairs, replacement, skylights, and flat roofing. Licensed & Insured. Get your free quote today!",
   keywords: [

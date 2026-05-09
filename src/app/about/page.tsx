@@ -21,9 +21,9 @@ import { CTASection } from "@/components/sections/cta";
 import { stats } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "About Us | High Skillz Roofing",
+  title: "About Us | Sonam Roofing",
   description:
-    "Learn about High Skillz Roofing - Toronto's trusted roofing contractor with 10+ years of experience. Licensed, insured, and committed to quality.",
+    "Learn about Sonam Roofing - Toronto's trusted roofing contractor with 10+ years of experience. Licensed, insured, and committed to quality.",
 };
 
 const values = [
@@ -84,7 +84,7 @@ export default function AboutPage() {
                 </FadeIn>
                 <FadeIn delay={0.2}>
                   <p className="mb-6 text-lg text-muted-foreground">
-                    High Skillz Roofing was founded on a simple principle:
+                    Sonam Roofing was founded on a simple principle:
                     provide honest, quality roofing services that homeowners can
                     trust. What started as a small team has grown into one of
                     the GTA&apos;s most respected roofing contractors.
@@ -105,7 +105,7 @@ export default function AboutPage() {
                   <div className="aspect-[4/3] overflow-hidden rounded-2xl bg-muted">
                     <img
                       src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&h=600&fit=crop"
-                      alt="High Skillz Roofing team working on a project"
+                      alt="Sonam Roofing team working on a project"
                       className="h-full w-full object-cover"
                     />
                   </div>
@@ -158,7 +158,7 @@ export default function AboutPage() {
               <FadeIn delay={0.1}>
                 <div className="prose text-center prose-lg mx-auto text-muted-foreground">
                   <p>
-                    High Skillz Roofing began over a decade ago when our founder
+                    Sonam Roofing began over a decade ago when our founder
                     recognized a gap in the Toronto roofing market — homeowners
                     needed a contractor they could actually trust. Too many were
                     getting poor quality work, hidden fees, and unreliable
