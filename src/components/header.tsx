@@ -50,11 +50,18 @@ export function Header() {
             </DropdownMenuTrigger>
             <DropdownMenuContent align="start">
               <DropdownMenuItem asChild>
-                <Link href="/service-areas">All Areas</Link>
+                <Link href="/service-areas" className="cursor-pointer">
+                  All Areas
+                </Link>
               </DropdownMenuItem>
               {serviceAreas.map((area: any) => (
                 <DropdownMenuItem key={area.slug} asChild>
-                  <Link href={`/service-areas/${area.slug}`}>{area.name}</Link>
+                  <Link
+                    href={`/service-areas/${area.slug}`}
+                    className="cursor-pointer"
+                  >
+                    {area.name}
+                  </Link>
                 </DropdownMenuItem>
               ))}
             </DropdownMenuContent>

@@ -38,7 +38,7 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 
 const serviceImages: Record<string, string> = {
   "roof-replacement":
-    "https://images.unsplash.com/photo-1632889328498-af5cc46be979?w=800&h=500&fit=crop",
+    "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&h=500&fit=crop",
   "roof-repair":
     "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&h=500&fit=crop",
   "flat-roofing":

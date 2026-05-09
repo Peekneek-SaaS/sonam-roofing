@@ -45,15 +45,15 @@ export function HeroSection() {
             <FadeIn delay={0.4}>
               <div className="mt-10 flex flex-wrap gap-6">
                 <div className="flex items-center gap-2 text-sm">
-                  <Shield className="h-5 w-5 text-accent" />
+                  <Shield className="h-5 w-5 text-primary" />
                   <span>Fully Licensed</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm">
-                  <Award className="h-5 w-5 text-accent" />
+                  <Award className="h-5 w-5 text-primary" />
                   <span>Fully Insured</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm">
-                  <Clock className="h-5 w-5 text-accent" />
+                  <Clock className="h-5 w-5 text-primary" />
                   <span>24/7 Emergency</span>
                 </div>
               </div>
@@ -63,7 +63,7 @@ export function HeroSection() {
             <div className="relative">
               <div className="aspect-4/3 overflow-hidden rounded-2xl bg-muted">
                 <Image
-                  src="https://images.unsplash.com/photo-1632889328498-af5cc46be979?w=800&h=600&fit=crop"
+                  src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&h=600&fit=crop"
                   alt="Professional roofers installing shingles on a residential roof"
                   className="h-full w-full object-cover"
                   height={600}
@@ -71,7 +71,7 @@ export function HeroSection() {
                 />
               </div>
               <div className="absolute -bottom-6 -left-6 rounded-xl bg-background p-6 shadow-lg">
-                <div className="flex items-center gap-4">
+                <div className="hidden md:flex items-center gap-4">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary">
                     <Award className="h-6 w-6 text-secondary" />
                   </div>

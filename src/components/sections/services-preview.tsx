@@ -44,7 +44,7 @@ export function ServicesPreviewSection() {
             </FadeIn>
           </div>
           <FadeIn delay={0.2}>
-            <Button asChild>
+            <Button variant="outline" asChild>
               <Link href="/services">
                 View All Services
                 <ArrowRight className="ml-2 h-4 w-4" />

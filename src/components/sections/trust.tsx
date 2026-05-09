@@ -58,8 +58,8 @@ export function TrustSection() {
             <FadeInStagger className="grid gap-6 sm:grid-cols-2">
               {trustPoints.map((point) => (
                 <FadeInStaggerItem key={point.title} className="flex gap-4">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/30">
-                    <point.icon className="h-5 w-5 text-foreground" />
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg">
+                    <point.icon className="h-5 w-5 text-primary" />
                   </div>
                   <div>
                     <h3 className="font-semibold">{point.title}</h3>

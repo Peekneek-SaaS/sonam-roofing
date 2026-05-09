@@ -33,7 +33,7 @@ export default function QuotePage() {
           <div className="container mx-auto px-4 lg:px-8">
             <div className="mx-auto max-w-3xl text-center">
               <FadeIn>
-                <h1 className="mb-4 text-4xl font-bold tracking-tight md:text-5xl">
+                <h1 className="mb-4 text-4xl text-primary font-bold tracking-tight md:text-5xl">
                   Get Your Free Roofing Quote
                 </h1>
               </FadeIn>
@@ -101,7 +101,7 @@ export default function QuotePage() {
                           key={benefit}
                           className="flex items-center gap-3 text-sm"
                         >
-                          <CheckCircle className="h-5 w-5 text-accent" />
+                          <CheckCircle className="h-5 w-5 text-primary" />
                           {benefit}
                         </li>
                       ))}
@@ -113,8 +113,8 @@ export default function QuotePage() {
                 <FadeIn direction="right" delay={0.2}>
                   <div className="rounded-2xl bg-accent/10 p-6">
                     <div className="flex items-start gap-4">
-                      <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-accent">
-                        <Shield className="h-6 w-6 text-accent-foreground" />
+                      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary">
+                        <Shield className="h-6 w-6 text-white" />
                       </div>
                       <div>
                         <h4 className="font-semibold">
@@ -132,19 +132,19 @@ export default function QuotePage() {
                 {/* Emergency Notice */}
                 <FadeIn direction="right" delay={0.3}>
                   <div className="rounded-2xl border border-accent bg-accent/5 p-6">
-                    <h4 className="mb-2 font-semibold text-accent">
+                    <h4 className="mb-2 font-semibold text-foreground">
                       Need Emergency Service?
                     </h4>
-                    <p className="mb-4 text-sm text-muted-foreground">
+                    <p className="mb-4 text-sm text-foreground">
                       For urgent roof leaks or storm damage, call us directly
                       for immediate assistance.
                     </p>
                     <a
                       href="tel:+14165551234"
-                      className="inline-flex items-center gap-2 font-medium text-accent hover:underline"
+                      className="inline-flex items-center gap-2 font-medium text-primary hover:underline"
                     >
                       <Phone className="h-4 w-4" />
-                      Call Now: (416) 555-1234
+                      (416) 555-1234
                     </a>
                   </div>
                 </FadeIn>

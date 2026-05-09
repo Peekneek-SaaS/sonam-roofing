@@ -134,7 +134,7 @@ export default function AboutPage() {
             <FadeInStagger className="grid grid-cols-2 gap-8 md:grid-cols-4">
               {stats.map((stat) => (
                 <FadeInStaggerItem key={stat.label} className="text-center">
-                  <p className="text-3xl font-bold text-accent md:text-4xl">
+                  <p className="text-3xl text-primary font-bold text-accent md:text-4xl">
                     {stat.value}
                   </p>
                   <p className="mt-1 text-sm text-muted-foreground">
@@ -156,7 +156,7 @@ export default function AboutPage() {
                 </h2>
               </FadeIn>
               <FadeIn delay={0.1}>
-                <div className="prose prose-lg mx-auto text-muted-foreground">
+                <div className="prose text-center prose-lg mx-auto text-muted-foreground">
                   <p>
                     High Skillz Roofing began over a decade ago when our founder
                     recognized a gap in the Toronto roofing market — homeowners
@@ -207,7 +207,7 @@ export default function AboutPage() {
                 <FadeInStaggerItem key={value.title}>
                   <div className="rounded-xl bg-background p-6 text-center">
                     <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-accent/10">
-                      <value.icon className="h-7 w-7 text-accent" />
+                      <value.icon className="h-7 w-7 text-primary" />
                     </div>
                     <h3 className="mb-2 text-lg font-semibold">
                       {value.title}
