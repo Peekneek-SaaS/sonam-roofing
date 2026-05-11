@@ -1,10 +1,14 @@
 "use client";
 
-import { useForm } from "@tanstack/react-form";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Loader2 } from "lucide-react";
+import { ArrowRight, CheckCircle, Loader2 } from "lucide-react";
 import { FadeIn } from "@/components/motion-wrapper";
+import * as z from "zod";
+import { useForm } from "@tanstack/react-form";
+import { useEffect, useState } from "react";
+
+import { submitQuoteAction } from "@/app/quote/actions";
 
 const services = [
   "Roof Replacement",
@@ -26,7 +30,49 @@ const timelines = [
   "Planning ahead (2+ months)",
 ];
 
+const formSchema = z.object({
+  firstName: z.string().min(1, "First Name is required."),
+  lastName: z.string().min(1, "Last Name is required."),
+  email: z.email("Invalid email address."),
+  phone: z.string().min(1, "Phone is required."),
+  address: z.string().min(1, "Street Address is required."),
+  city: z.string().min(1, "City is required."),
+  postalCode: z.string().min(1, "Postal Code is required."),
+  service: z.string().min(1, "Service is required."),
+  propertyType: z.string().min(1, "Property Type is required."),
+  timeline: z.string().min(1, "Timeline is required."),
+  message: z.string().optional(),
+});
+
 export function QuoteForm() {
+  const [submitted, setSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
+  const [formRenderKey, setFormRenderKey] = useState(0);
+  const [remainingSeconds, setRemainingSeconds] = useState(10);
+
+  useEffect(() => {
+    if (!submitted) {
+      return;
+    }
+
+    setRemainingSeconds(10);
+
+    const countdown = setInterval(() => {
+      setRemainingSeconds((seconds) => (seconds > 0 ? seconds - 1 : 0));
+    }, 1000);
+
+    const timer = setTimeout(() => {
+      setSubmitted(false);
+      setSubmitError(null);
+      setFormRenderKey((key) => key + 1);
+    }, 10000);
+
+    return () => {
+      clearInterval(countdown);
+      clearTimeout(timer);
+    };
+  }, [submitted]);
+
   const form = useForm({
     defaultValues: {
       firstName: "",
@@ -41,14 +87,49 @@ export function QuoteForm() {
       timeline: "",
       message: "",
     },
+    validators: {
+      onSubmit: ({ value }) => {
+        formSchema.parse(value);
+      },
+    },
     onSubmit: async ({ value }) => {
-      // Form submission logic would go here
-      console.log("[v0] Form submitted:", value);
+      setSubmitError(null);
+      const result = await submitQuoteAction(value);
+
+      if (!result.success) {
+        setSubmitError(result.error);
+        return;
+      }
+
+      form.reset();
+      // Scroll to the top after form submission
+      if (typeof window !== "undefined") {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      setSubmitted(true);
     },
   });
 
+  if (submitted) {
+    return (
+      <div className="flex flex-col items-center gap-4 rounded-xl border border-emerald-500 bg-emerald-100 p-6 text-center">
+        <CheckCircle className="size-28 text-emerald-500" />
+        <h1 className="text-xl">Thankyou for submitting!</h1>
+        <p className="text-base font-medium text-foreground">
+          Quote submitted, expect a response soon on email and text message.
+        </p>
+        <div className="space-y-2">
+          <Button onClick={() => setSubmitted(false)}>Get another quote</Button>
+          <p className="text-xs">Redirecting in {remainingSeconds} second(s)</p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <form
+      key={formRenderKey}
       onSubmit={(e) => {
         e.preventDefault();
         e.stopPropagation();
@@ -56,6 +137,11 @@ export function QuoteForm() {
       }}
       className="space-y-6"
     >
+      {submitError ? (
+        <div className="rounded-md border border-destructive/30 bg-destructive/10 px-4 py-3 text-sm text-destructive">
+          {submitError}
+        </div>
+      ) : null}
       {/* Personal Information */}
       <FadeIn>
         <div className="space-y-4">
