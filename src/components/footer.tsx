@@ -2,7 +2,12 @@ import Link from "next/link";
 import { Phone, Mail, MapPin, Airplay } from "lucide-react";
 import { services, serviceAreas } from "@/lib/data";
 import { HugeiconsIcon } from "@hugeicons/react";
-import { Facebook02Icon, InstagramIcon, Linkedin01Icon } from "@hugeicons/core-free-icons";
+import {
+  Facebook02Icon,
+  InstagramIcon,
+  Linkedin01Icon,
+} from "@hugeicons/core-free-icons";
+import Icon from "../../public/icons/icon";
 
 export function Footer() {
   return (
@@ -12,9 +17,10 @@ export function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="flex h-9 w-9 items-center justify-center rounded-md bg-primary">
+              {/* <div className="flex h-9 w-9 items-center justify-center rounded-md bg-primary">
                 <span className="text-lg font-bold text-secondary">SR</span>
-              </div>
+              </div> */}
+              <Icon />
               <span className="text-lg font-bold">Sonam Roofing</span>
             </div>
             <p className="text-sm text-primary-foreground/80">

@@ -84,10 +84,10 @@ export default function AboutPage() {
                 </FadeIn>
                 <FadeIn delay={0.2}>
                   <p className="mb-6 text-lg text-muted-foreground">
-                    Sonam Roofing was founded on a simple principle:
-                    provide honest, quality roofing services that homeowners can
-                    trust. What started as a small team has grown into one of
-                    the GTA&apos;s most respected roofing contractors.
+                    Sonam Roofing was founded on a simple principle: provide
+                    honest, quality roofing services that homeowners can trust.
+                    What started as a small team has grown into one of the
+                    GTA&apos;s most respected roofing contractors.
                   </p>
                 </FadeIn>
                 <FadeIn delay={0.3}>
@@ -109,19 +109,19 @@ export default function AboutPage() {
                       className="h-full w-full object-cover"
                     />
                   </div>
-                  <div className="absolute -bottom-6 -right-6 rounded-xl bg-accent p-6 shadow-lg">
+                  {/* <div className="absolute -bottom-6 -right-6 rounded-xl bg-accent p-6 shadow-lg">
                     <div className="flex items-center gap-4">
                       <Award className="h-8 w-8 text-accent-foreground" />
                       <div>
                         <p className="text-sm font-semibold text-accent-foreground">
-                          Award Winning
+                          10+
                         </p>
                         <p className="text-xs text-accent-foreground/80">
-                          Best of 2024
+                          Years of Experience
                         </p>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </FadeIn>
             </div>
@@ -134,7 +134,7 @@ export default function AboutPage() {
             <FadeInStagger className="grid grid-cols-2 gap-8 md:grid-cols-4">
               {stats.map((stat) => (
                 <FadeInStaggerItem key={stat.label} className="text-center">
-                  <p className="text-3xl text-primary font-bold text-accent md:text-4xl">
+                  <p className="text-3xl text-primary font-bold md:text-4xl">
                     {stat.value}
                   </p>
                   <p className="mt-1 text-sm text-muted-foreground">
@@ -295,19 +295,19 @@ export default function AboutPage() {
             <FadeInStagger className="grid gap-8 md:grid-cols-3">
               {[
                 {
-                  name: "Michael Chen",
+                  name: "Sonam Paleden",
                   role: "Founder & Lead Estimator",
                   image:
                     "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
                 },
                 {
-                  name: "David Thompson",
+                  name: "Neeraj Bhardwaj",
                   role: "Operations Manager",
                   image:
                     "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
                 },
                 {
-                  name: "Sarah Mitchell",
+                  name: "Sarah John",
                   role: "Customer Relations",
                   image:
                     "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",

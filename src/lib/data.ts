@@ -215,8 +215,8 @@ export const serviceAreas = [
 ];
 
 export const stats = [
-  { value: "11,000+", label: "Roofs Repaired" },
-  { value: "7,000+", label: "New Roofs Installed" },
+  { value: "1,000+", label: "Roofs Repaired" },
+  { value: "500+", label: "New Roofs Installed" },
   { value: "180+", label: "5-Star Reviews" },
   { value: "10+", label: "Years Experience" },
 ];
