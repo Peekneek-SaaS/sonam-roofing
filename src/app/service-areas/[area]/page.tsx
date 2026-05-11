@@ -283,20 +283,35 @@ export default async function AreaPage({ params }: PageProps) {
                 Other Service Areas
               </h2>
             </FadeIn>
-            <FadeInStagger className="flex flex-wrap justify-center gap-4">
-              {serviceAreas
-                .filter((a) => a.slug !== areaData.slug)
-                .map((otherArea) => (
-                  <FadeInStaggerItem key={otherArea.slug}>
-                    <Link
-                      href={`/service-areas/${otherArea.slug}`}
-                      className="flex items-center gap-2 rounded-full border bg-card px-6 py-3 font-medium transition-colors hover:bg-secondary"
-                    >
-                      <MapPin className="h-4 w-4 text-primary" />
-                      {otherArea.name}
-                    </Link>
-                  </FadeInStaggerItem>
-                ))}
+            <FadeInStagger className="flex flex-col gap-4">
+              <div className="flex flex-wrap justify-center gap-4">
+                {serviceAreas
+                  .filter((a) => a.slug !== areaData.slug)
+                  .map((otherArea) => (
+                    <FadeInStaggerItem key={otherArea.slug}>
+                      <Link
+                        href={`/service-areas/${otherArea.slug}`}
+                        className="flex items-center gap-2 rounded-full border bg-card px-6 py-3 font-medium transition-colors hover:bg-secondary"
+                      >
+                        <MapPin className="h-4 w-4 text-primary" />
+                        {otherArea.name}
+                      </Link>
+                    </FadeInStaggerItem>
+                  ))}
+              </div>
+
+              <FadeIn delay={0.4}>
+                <p className="mt-8 text-center text-sm text-muted-foreground">
+                  Don&apos;t see your area?{" "}
+                  <Link
+                    href="/quote"
+                    className="font-medium text-primary hover:underline"
+                  >
+                    Contact us
+                  </Link>{" "}
+                  — we likely serve your neighborhood too!
+                </p>
+              </FadeIn>
             </FadeInStagger>
           </div>
         </section>

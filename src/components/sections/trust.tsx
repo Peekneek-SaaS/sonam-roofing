@@ -75,7 +75,7 @@ export function TrustSection() {
             <div className="relative">
               <div className="aspect-4/3 overflow-hidden rounded-2xl bg-muted">
                 <img
-                  src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&h=600&fit=crop"
+                  src="/images/quality.jpg"
                   alt="Roofing professionals working on a roof installation"
                   className="h-full w-full object-cover"
                 />

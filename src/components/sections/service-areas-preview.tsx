@@ -58,7 +58,7 @@ export function ServiceAreasPreviewSection() {
           <FadeIn direction="right" delay={0.2}>
             <div className="relative aspect-square overflow-hidden rounded-2xl bg-muted lg:aspect-4/3">
               <img
-                src="https://images.unsplash.com/photo-1517935706615-2717063c2225?w=800&h=600&fit=crop"
+                src="/images/toronto.jpg"
                 alt="Toronto skyline aerial view"
                 className="h-full w-full object-cover"
               />

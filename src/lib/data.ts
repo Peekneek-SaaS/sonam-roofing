@@ -91,8 +91,7 @@ export const projects = [
     title: "Modern Shingle Replacement",
     location: "North York, ON",
     category: "Roof Replacement",
-    image:
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=800&fit=crop",
+    image: "/images/shingle.jpg",
     description: "Complete roof replacement with architectural shingles",
   },
   {
@@ -100,8 +99,7 @@ export const projects = [
     title: "Flat Roof Installation",
     location: "Vaughan, ON",
     category: "Flat Roofing",
-    image:
-      "https://images.unsplash.com/photo-1496307653780-42ee777d4833?w=1200&h=800&fit=crop",
+    image: "/images/flat.jpg",
     description: "Commercial flat roof with TPO membrane",
   },
   {
@@ -109,8 +107,7 @@ export const projects = [
     title: "Emergency Storm Repair",
     location: "Toronto, ON",
     category: "Emergency Repair",
-    image:
-      "https://images.unsplash.com/photo-1517935706615-2717063c2225?w=1200&h=800&fit=crop",
+    image: "/images/storm.jpg",
     description: "Rapid response storm damage repair",
   },
   {
@@ -118,8 +115,7 @@ export const projects = [
     title: "Skylight Installation",
     location: "Richmond Hill, ON",
     category: "Skylights",
-    image:
-      "https://images.unsplash.com/photo-1629429407759-01cd3d7cfb38?w=1200&h=800&fit=crop",
+    image: "/images/skylight.jpg",
     description: "Triple skylight installation with flashing",
   },
   {
@@ -127,8 +123,7 @@ export const projects = [
     title: "Cedar Shake Restoration",
     location: "Markham, ON",
     category: "Roof Replacement",
-    image:
-      "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?w=1200&h=800&fit=crop",
+    image: "/images/cedar.jpg",
     description: "Heritage home cedar shake restoration",
   },
   {
@@ -136,8 +131,7 @@ export const projects = [
     title: "Gutter System Upgrade",
     location: "Mississauga, ON",
     category: "Gutters",
-    image:
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=800&fit=crop",
+    image: "/images/gutter.jpg",
     description: "Seamless aluminum gutters with leaf guards",
   },
 ];

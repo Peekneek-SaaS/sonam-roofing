@@ -172,12 +172,11 @@ export default function AboutPage() {
                     that&apos;s how every roofing company should operate.
                   </p>
                   <p>
-                    Today, we&apos;ve completed over 11,000 roof repairs and
-                    7,000 new roof installations across the Greater Toronto
-                    Area. But what we&apos;re most proud of isn&apos;t the
-                    numbers — it&apos;s the relationships we&apos;ve built and
-                    the trust we&apos;ve earned from homeowners throughout our
-                    community.
+                    Today, we&apos;ve completed over 1,000 roof repairs and 500
+                    new roof installations across the Greater Toronto Area. But
+                    what we&apos;re most proud of isn&apos;t the numbers —
+                    it&apos;s the relationships we&apos;ve built and the trust
+                    we&apos;ve earned from homeowners throughout our community.
                   </p>
                 </div>
               </FadeIn>
